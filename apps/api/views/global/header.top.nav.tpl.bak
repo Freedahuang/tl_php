@@ -1,0 +1,57 @@
+{include file="global/header.tpl"}
+
+<div id="top-nav">
+    <ul>
+
+        <!-- 左部导航 -->
+        <li><a href="/">首页分类 ></a><li>
+        <li class="pop-menu" alt="Shichang"><a href="">跳蚤市场 ></a>
+        <ul><li><a href="">测试链接</a></li><li><a href="">测试链接</a></li><li><a href="">测试链接</a></li><li><a href="">测试链接</a></li><li><a href="">测试链接</a></li></ul><li>
+        <li class="pop-menu" alt="Jiaju"><a href="">家具/日用品 ></a>
+        <ul><li><a href="">测试链接</a></li><li><a href="">测试链接</a></li><li><a href="">测试链接</a></li><li><a href="">测试链接</a></li><li><a href="">测试链接</a></li></ul><li>
+        <li><label>床/床垫</label><li>
+        <!-- 左部导航 -->
+
+        <!-- 右部按钮 -->
+        <li class="fRight"><label>您所在的位置：<span id="region" alt="">
+        {if $region1}{$region1}{elseif $region2} - {$region2}{else}未选择{/if}
+        </span></label><a href="{rewrite_link controller='index' action='region' option=$action_uri thickbox=$thickbox}" 
+            title="更改位置" class="thickbox">?</a><li>
+        <!-- 右部按钮 -->
+
+    </ul>
+</div>
+{literal}
+<script language="JavaScript">
+<!--
+    $(document).ready(function(){
+        var flag = 0;
+        $("li.pop-menu").hover(function(){
+            // 关闭其他菜单 确保只有一个
+            $("li.pop-menu ul").hide();
+
+            // 获取当前元素的位置
+            var offset = $(this).offset();
+            var left = offset.left;
+            var top = offset.top + $(this).height();
+
+            // 对应设置子菜单位置
+            var target = $(this).children("ul");;
+            target.css("top", top);
+            target.css("left", left);
+
+            // 显示出来 并增加隐藏方法
+            target.show();
+            target.hover(function(){},function(){
+                target.hide();
+            });
+        });
+
+    });
+//-->
+</script>
+{/literal}
+
+<div id="main-wrap">
+
+    <div id="body-wrap">

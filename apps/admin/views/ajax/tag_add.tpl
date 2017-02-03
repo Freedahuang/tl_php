@@ -1,0 +1,1 @@
+{include file="ajax/item.tpl"}

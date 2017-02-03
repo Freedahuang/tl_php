@@ -1,0 +1,1 @@
+{include file="widget/form_list.tpl" form=$form}

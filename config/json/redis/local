@@ -1,0 +1,12 @@
+{
+    "default":{"host":"localhost", "port":"7775", "auth":""}
+    ,"admin":{"host":"localhost", "port":"7775", "auth":""}
+    ,"follow":{"host":"localhost", "port":"7775", "auth":""}
+    ,"banned":{"host":"localhost", "port":"7775", "auth":""}
+    ,"favorite":{"host":"localhost", "port":"7775", "auth":""}
+    ,"user":{"host":"localhost", "port":"7775", "auth":""}
+    ,"search":{"host":"localhost", "port":"7776", "auth":""}
+    ,"message":{"host":"localhost", "port":"7775", "auth":""}
+    ,"alert":{"host":"localhost", "port":"7775", "auth":""}
+    ,"agree":{"host":"localhost", "port":"7775", "auth":""}
+}

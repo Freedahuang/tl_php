@@ -1,0 +1,6 @@
+{
+	"default":{"host":"localhost", "name":"tl_github", "user":"root", "pwd":""}
+    ,"tl_user":{"host":"localhost", "name":"tl_user", "user":"root", "pwd":""}
+    ,"tl_auth":{"host":"localhost", "name":"tl_auth", "user":"root", "pwd":""}
+    ,"tl_data":{"host":"localhost", "name":"tl_data", "user":"root", "pwd":""}
+}

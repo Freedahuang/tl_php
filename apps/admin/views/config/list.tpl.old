@@ -1,0 +1,27 @@
+{* header.tab.tpl与footer.tab.tpl必须成对出现 *}
+{include file="global/pair.header.tab.tpl"}
+
+
+<ul class="indent">
+
+{foreach from=$list key=k item=v}
+{include file="config/list-li.tpl" option=$k content=$v}
+{/foreach}
+
+</ul>
+
+{include file="global/pair.footer.tab.tpl"}
+<script type="text/javascript">
+// <![CDATA[
+
+{literal}
+function clean(option)
+{
+	$("#"+option).val("");
+}
+
+
+{/literal}
+    
+//]]>
+</script>

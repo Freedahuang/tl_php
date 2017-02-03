@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#advanced_dlg.image_title}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="../../utils/mctabs.js"></script>
+	<script type="text/javascript" src="../../utils/form_utils.js"></script>
+	<base target="_self" />
+</head>
+<body id="image" style="display: none">
+        <form id="up_fm" method=post 
+            action="" 
+            enctype="multipart/form-data" autocomplete="off">
+     <table border="0" cellpadding="4" cellspacing="0">
+          <tr>
+            <td><input type="file" name="uploaded_file" value=""/></td>
+          </tr>
+		  <tr>
+			<td><input type="submit" name="submit" value="{#advanced_dlg.image_upload}" class="button" /></td>
+		  </tr>
+        </table>
+        </form>
+
+</body>
+</html>
+<script language="JavaScript">
+<!--
+    document.getElementById("up_fm").action = tinyMCEPopup.getParam('upload_file');
+//-->
+</script>
