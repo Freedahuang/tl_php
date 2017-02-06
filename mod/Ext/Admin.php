@@ -261,7 +261,7 @@ abstract class Ext_Admin extends TL_Controller
     public function pdAction()
     {
         $obj = new $this->cls();
-        if ($obj->push2redis(_REDIS_ADMAIN_, 'online')) {
+        if ($obj->push2redis(_REDIS_ADMIN_, 'online')) {
             TL_Tools::redirect('page/tip/option/1001');
         } else {
             TL_Tools::redirect('page/tip/option/1002');
